@@ -1,20 +1,40 @@
 body {
+	
 	background-image:url(images/Rohan.jpg);
 	background-attachment: fixed;
-	background-position: center center
-	
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+
 }
 
 h1 {
 	color: #4065A4;
 	font-size: 400%;
+
 }
- 
+mark{
+	background-color:#A4B1C7;
+	font-weight: bold;
+}
+
+h2 {
+	background-color: #B0C0DB;
+}
+
+ h3{
+ 	background-color: #B0C0DB;
+ }
+
+ h4{
+ 	background-color: #B0C0DB;
+ }
 .intro {
 	font-family: sans-serif;
-  padding: 20px;
+  	padding: 20px;
   /* propriétés de l'arrière-plan */
-  background-color: #B0C0DB;
+  	background-color: #B0C0DB;
+ 	opacity: 1%;
 }
 .reste{
 	background-color: #B0C0DB;
@@ -22,6 +42,9 @@ h1 {
 	padding: 20px;
 }
 
+form {
+
+}
 #tablo {
-	background-image: linear-gradient(to bottom, orange, yellow);
+	background-image: linear-gradient(to left, #B0C0DB, #F0F1F2);
 }
