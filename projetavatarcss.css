@@ -1,6 +1,13 @@
+body {
+	background-image:url(images/Rohan.jpg);
+	background-attachment: fixed;
+	background-position: center center
+	
+}
+
 h1 {
 	color: #4065A4;
-	font-size: 18;
+	font-size: 400%;
 }
  
 .intro {
@@ -10,5 +17,11 @@ h1 {
   background-color: #B0C0DB;
 }
 .reste{
-	background-color: #B0C0DB
+	background-color: #B0C0DB;
+	font-family: sans-serif;
+	padding: 20px;
+}
+
+#tablo {
+	background-image: linear-gradient(to bottom, orange, yellow);
 }
