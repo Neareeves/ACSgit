@@ -1,3 +1,11 @@
+@font-face {
+	font-family: EnchantedLand;
+	src: url('EnchantedLand.otf');
+	font-family: Augusta;
+	src: url('Augusta.ttf');
+ }
+	
+
 body {
 	
 	background-image:url(images/Rohan.jpg);
@@ -16,64 +24,82 @@ h1 {
 	font-family: monospace;
 	letter-spacing: 3.5em;
 	text-align:  center;
+	opacity: 0.6;
 }
 
 h2 {
 	background-color: #B0C0DB;
-	max-width: 250px;
+	max-width: 31vw;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 4vw;
+	text-align: center;
+	font-family: 'EnchantedLand'
+
 	
 }
 
  h3 {
  	background-color: #B0C0DB;
- 	max-width: 500px
+ 	max-width: 500px;
+	margin-left: 3;
+	margin-right: auto;
+	font-family: 'Augusta';
+	font-size: 2vw;
  }
 
  h4 {
  	background-color: #B0C0DB;
+ 	
  }
 
 
  /*class and id divers*/
 
+
+
 .portrait {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: all;
+	margin-right: ;	
 	padding: 5px;
 	border-width: 4pt;
 	border-style: dotted;
-	
-	border-color: #C1905B
+	border-color: #C1905B;
+	float: right;
+	max-width: 49%;
+}
+
+.text {
+	float:right;
+	max-width: 49%;
+}
+
+.clear {
+	clear:both;
 }
 
 .formulairecontact {
 	text-align: right;
 	background-position: right;
+	border-collapse: collapse;
 }
 
-.intro {
-
+.flow {
+	text-align-last: left;
+	text-align: justify;
 	font-family: sans-serif;
   	padding: 20px;
   /* propriétés de l'arrière-plan */
-  	background-color: #B0C0DB;
- 	width: 50%
-}
-.restetexte{
-	background-color: #B0C0DB;
-	font-family: sans-serif;
-	padding: 20px;
-	width: 50%;
-	text-align: left; 
-	background-position: 
-}
+  	background-color: rgba(37, 99, 53, 0.35);
+ 	width: 60%;
+ 	margin-right: auto;
+ 	margin-left: 0;
+ 	font-family: 'arial'
+ 	}
 
-.class{
-	float: right;
-}
+
 mark{
-	background-color:#A4B1C7;
+	background-color: rgba(26, 104, 46, 0.40);
 	font-weight: bold;
 }
 form {
@@ -86,17 +112,7 @@ float: right;
 
 /* media queries*/
 
-@media screen and (max-width: 1200px) {
-	.reste {
-		background-color: red;
-	}
-}
 
-@media screen and (max-width: 500px){
-	.reste {
-background-color: yellow;
-	}	
-}
 
 @media screen and (max-width: 1500px){
 	h1 {
@@ -105,6 +121,19 @@ background-color: yellow;
 	font-family: monospace;
 	letter-spacing: 1em;
 	text-align: : center;
+	}
+
+	.flow {
+		background-color: rgba(99,37,53,0.47);
+	}
+
+	body {
+	
+	background-image:url(images/Rohan.jpg);
+	background-attachment:  scroll;
+	background-position: center top;
+	background-repeat: round;
+	background-size: 100%;
 	}
 }
 
@@ -116,4 +145,8 @@ background-color: yellow;
 	letter-spacing:0em;
 	text-align: center;
 	}
+	.flow {
+background-color: rgba(37,84,99,0.47);
+	}	
 }
+
