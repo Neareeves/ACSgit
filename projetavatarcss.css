@@ -3,6 +3,8 @@
 	src: url('EnchantedLand.otf');
 	font-family: Augusta;
 	src: url('Augusta.ttf');
+	font-family: SEVESBRG;
+	src: url('SEVESBRG.TTF');
  }
 	
 
@@ -19,12 +21,13 @@ body {
 
 /* Titres */
 h1 {
-	color: #AD6D1F;
+	color: rgba(135,77,22,0.69);
 	font-size: 400%;
 	font-family: monospace;
-	letter-spacing: 3.5em;
+	letter-spacing: 2.5em;
 	text-align:  center;
-	opacity: 0.6;
+	opacity: 0.7;
+	font-family: 'SEVESBRG';
 }
 
 h2 {
@@ -34,7 +37,8 @@ h2 {
 	margin-right: auto;
 	font-size: 4vw;
 	text-align: center;
-	font-family: 'Augusta';
+	font-family: 'SEVESBRG';
+	float: center;
 
 	
 }
@@ -56,14 +60,15 @@ h2 {
 
 /*Navigation*/
 nav {
-	width: 100%;
+	width: 30%;
 	background-color: rgba(37,99,44,0.4);
+	float: left;
 }
 nav > ul > li {
 	float: left;
 	position: relative;
 	list-style-type: none;
-	padding: 20px 30px;
+	padding: 10px 30px;
 }
 
 li {
@@ -80,14 +85,12 @@ nav > ul::after{
  /*class and id divers*/
 
 .portrait {
-	
 	padding: 5px;
 	border-width: 4pt;
 	border-style: dotted;
 	border-color: #C1905B;
 	float: right;
-	max-width: auto;
-	max-height: 100%;
+	
 }
 
 .text {
@@ -104,6 +107,8 @@ nav > ul::after{
 	text-align: right;
 	background-position: right;
 	border-collapse: collapse;
+	height: center;
+	width: center;
 }
 
 .flow {
