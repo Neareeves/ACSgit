@@ -11,7 +11,7 @@ body {
 
 /* Titres */
 h1 {
-	color: #4065A4;
+	color: #AD6D1F;
 	font-size: 400%;
 	font-family: monospace;
 	letter-spacing: 3.5em;
@@ -20,7 +20,8 @@ h1 {
 
 h2 {
 	background-color: #B0C0DB;
-	max-width: 250px
+	max-width: 250px;
+	
 }
 
  h3 {
@@ -35,22 +36,37 @@ h2 {
 
  /*class and id divers*/
 
-#formulairecontact {
-	text-align: right;
+.portrait {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	border-width: 4pt;
+	border-style: dotted;
+	
+	border-color: #C1905B
 }
+
+.formulairecontact {
+	text-align: right;
+	background-position: right;
+}
+
 .intro {
+
 	font-family: sans-serif;
   	padding: 20px;
   /* propriétés de l'arrière-plan */
   	background-color: #B0C0DB;
  	width: 50%
 }
-.reste{
+.restetexte{
 	background-color: #B0C0DB;
 	font-family: sans-serif;
 	padding: 20px;
 	width: 50%;
-	float: left;
+	text-align: left; 
+	background-position: 
 }
 
 .class{
