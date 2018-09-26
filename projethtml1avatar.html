@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html>
-<meta name="Neareeves" charset="utf-8">
-<link href="projetavatarcss.css" rel="stylesheet" type="text/css">
+<html lang='fr'>
+
 
 <head>
+	<meta name="description" content="Haleth son of Helm est un guerrier de la Terre du Milieu "><!-- c'est ce qui s'affiche dans google si on fait une recherche.-->
+	<meta charset="utf-8">
+
+	<meta name="author" content="Aletha">
+
+	<link href="projetavatarcss.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" type="image/.jpg" href="images/Haleth.jpg">
 
 	<title>Le site d'Haleth </title>
-	<h1>Welcome!</h1>
+	
 
 
 </head>
 <body>
+
+	<header>
+		<h1>Welcome!</h1>
+	</header>
+
 	<h2>À quoi ressemble-je?</h2>
 
 	<a href="https://html.com/attributes/a-href/" target="blank"><img src="images/Haleth.jpg" alt="ça représente un petit enfant" title="petit enfant"  > </a>
@@ -18,6 +29,7 @@
 
 
 	<h3>Bonjour, je m’appelle Haleth. Haleth "fils de Hama".</h3>
+
 		<p class="intro">
 		« Fils de Hama », c’est le nom par lequel on me connait, bien que je sois le fils de Helm Mainmarteau. Mon père, grand roi du Rohan, est connu pour avoir construit un immense ouvrage défensif au bord d’une montagne, à qui il a d’ailleurs donné son nom. Ce <mark>« Gouffre de Helm »</mark>, comme on l’appelle, a été réputé pour être le fort le plus solide de la Terre du Milieu, pendant un certain temps. Jusqu’à ce qu’une armée d’Uruk-Hai parvienne, en quelques minutes à peine, à réduire en miettes la grosse muraille qu’une nuée de nains avait mis des années à édifier.</p>
 
@@ -27,63 +39,74 @@
 
 		
 		<hr>
-	<h4>Si vous voulez me contacter, c'est part là!</h4>
 
-	<form>
-		<table id="tablo" border="9">
-			<tr>
-				<td>Entrez un nom</td>
-				<td><input type="text" name="Nom"></td>
-			</tr>
-			<tr>
-				<td>Un mail pour rester en contact?</td>
-				<td><input type="email" name="direccion"></td>
-			</tr>
-			<tr>
-				<td>C'est quand le solstice?</td>
-				<td><input type="date" name="solstice"></td>
-			</tr>
-			<tr>
-				<td>C'est quoi ton site?</td>
-				<td><input type="url" name="url"></td>
-			</tr>
-			<tr>
-				<td>T'es une fille ou un garçon?</td>
-				<td><label for="fille">fille</label>
-				<input type="radio" name="genre" >
-				<label for="garcon">garçon</label>
-				<input type="radio" name="genre" ></td>
-			</tr>
-		</table>
-		<br>
-		<label for="message">C'est quoi votre message?</label><br>
-		<textarea name="message" placeholder="C'est ici qu'il faut écrire..." rows="5" cols="40"></textarea>
+		<section>
+
+			<h4 class="formulairecontact">Si vous voulez me contacter, c'est part là!</h4>
+
+				<form>
+					<table id="tablo" border="9">
+						<tr>
+							<td>Entrez un nom</td>
+							<td><input type="text" name="Nom"></td>
+						</tr>
+						<tr>
+							<td>Un mail pour rester en contact?</td>
+							<td><input type="email" name="direccion"></td>
+						</tr>
+						<tr>
+							<td>C'est quand le solstice?</td>
+							<td><input type="date" name="solstice"></td>
+						</tr>
+						<tr>
+							<td>C'est quoi ton site?</td>
+							<td><input type="url" name="url"></td>
+						</tr>
+						<tr>
+							<td>T'es une fille ou un garçon?</td>
+							<td><label for="fille">fille</label>
+							<input type="radio" name="genre" >
+							<label for="garcon">garçon</label>
+							<input type="radio" name="genre" ></td>
+						</tr>
+					</table>
+			<br>
+
+			<label for="message">C'est quoi votre message?</label><br>
+			<textarea name="message" placeholder="C'est ici qu'il faut écrire..." rows="5" cols="40"></textarea>
+
 <br>
+
 <br>
-	Et le bonus : <br> quelles sont tes passions?<br>
-		<input type="checkbox" name="halloween" >
-		<label for="halloween">halloween</label><br>
 
-		<input type="checkbox" name="manger" >
-		<label for="manger">quand est-ce qu'on mange?</label><br>
+				Et le bonus : <br> quelles sont tes passions?<br>
+					<input type="checkbox" name="halloween" >
+					<label for="halloween">halloween</label><br>
 
-		<input type="checkbox" name="crochet">
-		<label for="crochet">le crochet. De serrure!</label> <br>
+					<input type="checkbox" name="manger" >
+					<label for="manger">quand est-ce qu'on mange?</label><br>
+
+					<input type="checkbox" name="crochet">
+					<label for="crochet">le crochet. De serrure!</label> <br>
 <br>
-		<input type="submit" value="c'est partoche!" >
-	</form><br>
-
+					<input type="submit" value="c'est partoche!" >
+				</form><br>
+			</section>
 	<hr>
 
-	<div>Pour en savoir plus</div>
+	<div class="savoir">Pour en savoir plus</div>
+
 	<iframe width="400" height="300" src="https://prezi.com/view/bl86F3kYzPYRlXtN2qgW/embed" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1"></iframe>
-	<br>
-<br><br><br><br>
 
-<script type="text/javascript">
+	
+<br><br><br><br><br>
+
+	<script type="text/javascript">
 	console.log("coucou!")
-</script>
 
-<footer>test</footer>
+	</script>
+
+	<footer>test
+	</footer>
 </body>
 </html>

@@ -8,43 +8,96 @@ body {
 
 }
 
+
+/* Titres */
 h1 {
 	color: #4065A4;
 	font-size: 400%;
-
-}
-mark{
-	background-color:#A4B1C7;
-	font-weight: bold;
+	font-family: monospace;
+	letter-spacing: 3.5em;
+	text-align:  center;
 }
 
 h2 {
 	background-color: #B0C0DB;
+	max-width: 250px
 }
 
- h3{
+ h3 {
+ 	background-color: #B0C0DB;
+ 	max-width: 500px
+ }
+
+ h4 {
  	background-color: #B0C0DB;
  }
 
- h4{
- 	background-color: #B0C0DB;
- }
+
+ /*class and id divers*/
+
+#formulairecontact {
+	text-align: right;
+}
 .intro {
 	font-family: sans-serif;
   	padding: 20px;
   /* propriétés de l'arrière-plan */
   	background-color: #B0C0DB;
- 	opacity: 1%;
+ 	width: 50%
 }
 .reste{
 	background-color: #B0C0DB;
 	font-family: sans-serif;
 	padding: 20px;
+	width: 50%;
+	float: left;
 }
 
+.class{
+	float: right;
+}
+mark{
+	background-color:#A4B1C7;
+	font-weight: bold;
+}
 form {
-
+float: right;
 }
 #tablo {
 	background-image: linear-gradient(to left, #B0C0DB, #F0F1F2);
+}
+
+
+/* media queries*/
+
+@media screen and (max-width: 1200px) {
+	.reste {
+		background-color: red;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.reste {
+background-color: yellow;
+	}	
+}
+
+@media screen and (max-width: 1500px){
+	h1 {
+		color: #4065A4;
+	font-size: 400%;
+	font-family: monospace;
+	letter-spacing: 1em;
+	text-align: : center;
+	}
+}
+
+@media screen and (max-width: 600px){
+	h1 {
+		color: #4065A4;
+	font-size: 400%;
+	font-family: monospace;
+	letter-spacing:0em;
+	text-align: center;
+	}
 }
