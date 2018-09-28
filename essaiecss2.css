@@ -1,21 +1,29 @@
-/* Menu */
- nav {
- 	width: 100%;
- 	background-color: pink;
-
+/*police*/
+@font-face {
+	font-family: SHERWOOD;
+	src: url('SHERWOOD.TTF');
  }
 
- nav > ul > li {
+/* Menu */
+/* nav {
+ 	width: 100%;
+ 	background-color: pink;
+ }*/
+nav > ul > li > ul {
+	display: none;
+}
+ nav > ul li {
  	list-style-type: none;
  	position: relative;
  	float: left;
- 	padding: 10px 10px;
+ 	padding: 10px 25px;
  	background-color: rgba(34, 129, 61, 0.67);
+
  }
 
 nav > ul > li:hover {
 	color: yellow;
-	background-color: rgba(34, 60, 129, 0.67);
+	
 }
 
 nav a {
@@ -23,9 +31,24 @@ nav a {
 	text-decoration: blink;
 }
 
+nav > ul > li:hover .sousmenu {
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: rgba(128, 102, 245, 0.72);
+	padding: 10px 10px;
+}
+
 .clear {
 	clear: both;
 }
+/*.monhistoire:hover, .contactez:hover {
+	border-top: double;
+	border-top-color: rgba(128, 102, 245, 0.72);
+}
+*/
+ /* corps de texte*/
 
 .portrait {
 	float: right;
@@ -42,13 +65,33 @@ nav a {
 	text-align: justify;
 	border-style: ridge;
 }
-
-h2 {
-	text-align: center;
-	font-family: 'SHERWOOD'
+ 
+.flow {
+	background-color: rgba(201, 158, 19, 0.4);
 }
 
-@font-face {
-	font-family: SHERWOOD;
-	src: url('SHERWOOD.TTF');
+h1 {
+	font-size: 30px;
+	font-stretch: extra-expanded;: 
+}
+
+h2, h3 {
+	text-align: center;
+	font-family: 'SHERWOOD';
+}
+ h2{
+ 	font-size: 3vw;
+ 	font-stretch: expanded;
  }
+
+h3{
+	font-stretch: ultra-expanded;
+	font-size: 2vw;
+	padding-top: 0;
+}
+
+mark {
+	background-color: rgba(201, 158, 19, 0.3);
+	display: inline-block;
+	background-radius: 10px;
+}
