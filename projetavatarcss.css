@@ -5,9 +5,14 @@
 	src: url('Augusta.ttf');
 	font-family: SEVESBRG;
 	src: url('SEVESBRG.TTF');
+	font-family: SHERWOOD;
+	src: url('SHERWOOD.TTF');
  }
 	
-
+* { 
+margin-right: 0;
+padding: 0;
+ }
 body {
 	
 	background-image:url(images/Rohan.jpg);
@@ -27,29 +32,29 @@ h1 {
 	letter-spacing: 2.5em;
 	text-align:  center;
 	opacity: 0.7;
-	font-family: 'SEVESBRG';
+	font-family: SEVESBRG;
 }
 
 h2 {
-	background-color: #B0C0DB;
-	max-width: 31vw;
+	background-color: rgba(81, 130, 210, 0.23);
+	max-width: 38vw;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 4vw;
 	text-align: center;
-	font-family: 'SEVESBRG';
-	float: center;
-
-	
+	font-family: 'SHERWOOD';
+	border-radius: 50px;
 }
 
  h3 {
- 	background-color: #B0C0DB;
- 	max-width: 500px;
+ 	background-color: rgba(37, 99, 53, 0.35);
+ 	max-width: 400px;
 	margin-left: 3;
 	margin-right: auto;
 	font-family: 'Augusta';
 	font-size: 2vw;
+	border-radius: 50px;
+	text-align: center;
  }
 
  h4 {
@@ -60,43 +65,86 @@ h2 {
 
 /*Navigation*/
 nav {
-	width: 30%;
-	background-color: rgba(37,99,44,0.4);
+	background: rgba(102, 226, 245, 0.65) ;
+	border: 1px dashed #C1905B;
+	background-size: 0px;
 	float: left;
+	padding: 0;
+	font-family: 'Century Gothic';
 }
-nav > ul > li {
+
+nav li {
 	float: left;
 	position: relative;
 	list-style-type: none;
-	padding: 10px 30px;
+	padding: 5px 10px;
+
 }
 
 li {
 	border-width: 1px;
 	border-style: dashed;
-	border-radius: 20px;
+	border-radius: 0px;
 }
 nav > ul::after{
 	content: "";
 	display: block;
 	clear: both;
 }
+nav a{
+	text-decoration: none;
+}
 
+nav a:hover {
+	text-decoration: overline;
+	text-decoration-line: overline;
+	
+}
+
+nav > ul > li > ul {
+	display: ;
+}
+.sousmenu {
+	display: none;
+}
+
+nav li:hover .sousmenu {
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	background-color: rgba(102, 226, 245, 0.65);
+	z-index: 50; /* sert à donner un ordre à diférentes couches qui se chevauchent*/
+}
+
+
+*/
+/*signification?*/
  /*class and id divers*/
-
 .portrait {
 	padding: 5px;
 	border-width: 4pt;
 	border-style: dotted;
 	border-color: #C1905B;
 	float: right;
+	width: 45%;
 	
 }
 
+/*.portrait img {
+	width: 100%;
+	float: right;
+}*/
+/*pourquoi là 100% de la largeur c'est la moitié, et pour le texte, c'est otute la largeur?*/
+
 .text {
 	float:right;
-	max-width: 34%;
+	width: 45%;
+	margin-right: 3vw;
 
+}
+h3 {
+	text-align: center;
 }
 
 .clear {
@@ -115,14 +163,14 @@ nav > ul::after{
 	text-align-last: left;
 	text-align: justify;
 	font-family: sans-serif;
-  	padding: 20px;
+  	padding: 10px;
   /* propriétés de l'arrière-plan */
   	background-color: rgba(37, 99, 53, 0.35);
- 	width: 60%;
+ 	/*width: 120%;
  	margin-right: auto;
- 	margin-left: 0;
+ 	margin-left: auto;*/
  	font-family: 'arial';
- 	border-radius: 20px;
+ 	border-radius: 15px;
  	}
 
 
@@ -133,14 +181,22 @@ mark{
 form {
 float: center;
 }
+
 #tablo {
 	background-image: linear-gradient(to left, #B0C0DB, #F0F1F2);
 }
 
 #prezi {
-	width: 80%
+	width: 80%;
+	height: 800px;
+}
+footer {
+	font-synthesis: weight;
+	font-size: 20pt;
+	font-family: 'SHERWOOD';
 }
 /* media queries*/
+
 
 
 
