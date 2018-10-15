@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Century Gothic';
 }
 
 article {
@@ -8,23 +9,53 @@ article {
 	margin: 20px auto;
 }
 
-/******************navigation*************************/
+@font-face {
+	font-family: EnchantedLand;
+	src: url('EnchantedLand.otf');
+	font-family: Augusta;
+	src: url('Augusta.ttf');
+	font-family: SEVESBRG;
+	src: url('SEVESBRG.TTF');
+	font-family: SHERWOOD;
+	src: url('SHERWOOD.TTF');
+ }
 
+/******************navigation*************************/
+h1 {
+	color: #FFF;
+	padding-top: 20px;
+	font-family: 'SHERWOOD';
+}
 
 
 .tete {
-	background-color: #473F27;
+	background-color: #7F4D2D;
 	display: flex;
 	justify-content: space-around;
 }
 .tete > nav > ul {
 	display: flex;
 	justify-content: space-around;
+
 }
 .tete > nav > ul > li {
-	margin: ;
+	margin: 30px;
+	color: rgba(255,154,89,.4);
+	font-family: 'SHERWOOD';
 }
-/******************header*************************/
+.tete > nav a {
+	color: rgba(255,154,89,1);
+	text-decoration: none;
+}
+
+/******************section*************************/
+
+.text > p {
+	margin: 20px 15px auto auto;
+	padding:15px;
+}
+
+/****************portrait*******************/
 .flexportrait {
 	display: flex;
 	flex-direction: column;
@@ -43,15 +74,25 @@ article {
 	color: #403822;
 }
 
-.text > p {
-	margin: 20px 15px auto auto;
-	padding:15px;
-}
+
+/***************formulaire***************/
 #contact {
 	width: 60%;
 	margin-left: auto;
-	margin-right: auto;
+	
+	margin-top: 80px;
+	margin-bottom: 80px;
 }
 form {
 	margin: 50px auto;
+
+}
+#envoie {
+	background-color: #FF9A59;
+	border-radius: 20px;
+
+}
+
+label {
+	padding-bottom: 20px 0;
 }
