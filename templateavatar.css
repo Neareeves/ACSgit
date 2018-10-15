@@ -6,7 +6,10 @@
 
 article {
 	width: 80%;
-	margin: 20px auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 @font-face {
@@ -70,16 +73,21 @@ h1 {
 	margin: 20px 0;
 } 
 #portrait {
-	background-color: #BFA967;
+	background-color: rgba(255,154,89,.3);;
 	color: #403822;
 }
 
 
 /***************formulaire***************/
 #contact {
-	width: 60%;
-	margin-left: auto;
 	
+
+}
+.contact {
+
+	max-width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 80px;
 	margin-bottom: 80px;
 }
@@ -90,7 +98,7 @@ form {
 #envoie {
 	background-color: #FF9A59;
 	border-radius: 20px;
-
+padding: 10px;
 }
 
 label {

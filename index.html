@@ -47,54 +47,56 @@
 					</div>	
 				</article>
 			</section>
-			<section id="contact"><br>
-				<h3 class="formulairecontact">Si vous voulez me contacter, c'est part là!</h3>
-<br>
-				<form name="formulairecontacte" method="post">
-					<table>
-						<tr>
-							<td><label for="nom">Entrez un nom</label></td>
-							<td><input id="nom" type="text" name="nom" required></td>
-							<td><span id="manquelenom"></span><br></td>
-						</tr>	
-						<tr>
-							<td><label for="email">Un mail pour rester en contact?    </label></td>
-							<td><input id="email" type="email" name="email" required></td>
-							<td><span id="manquelemail"></span><br></td>
-						</tr>	
-						<tr>
-							<td><label for="solstice">C'est quand le solstice?</label></td>
-							<td><input type="date" name="solstice"></td>
-						</tr>	
-						<tr>
-							<td><label for="url">C'est quoi ton site?</label></td>
+			<section id="contact">
+				<div class="contact"><br>
+					<h3 class="formulairecontact">Si vous voulez me contacter, c'est part là!</h3>
+					<br>
+					<form name="formulairecontacte" method="post">
+						<table>
+							<tr>
+								<td><label for="nom">Entrez un nom</label></td>
+								<td><input id="nom" type="text" name="nom" required></td>
+								<td><span id="manquelenom"></span><br></td>
+							</tr>	
+							<tr>
+								<td><label for="email">Un mail pour rester en contact?    </label></td>
+								<td><input id="email" type="email" name="email" required></td>
+								<td><span id="manquelemail"></span><br></td>
+							</tr>	
+							<tr>
+								<td><label for="solstice">C'est quand le solstice?</label></td>
+								<td><input type="date" name="solstice"></td>
+							</tr>	
+							<tr>
+								<td><label for="url">C'est quoi ton site?</label></td>
 								<td><input type="url" name="url" id="url" ></td>
-						</tr>	
-						<tr>
-							<td><label for="genre">T'es une fille ou un garçon?</label></td>
-							<td><label for="fille">fille</label>
-							<input type="radio" name="genre" >
-							<label for="garcon">garçon</label>
-							<input type="radio" name="genre" ></td>
-						</tr>	
-					</table>
-					<br><br><br>
+							</tr>	
+							<tr>
+								<td><label for="genre">T'es une fille ou un garçon?</label></td>
+								<td><label for="fille">fille</label>
+									<input type="radio" name="genre" >
+									<label for="garcon">garçon</label>
+									<input type="radio" name="genre" ></td>
+								</tr>	
+							</table>
+							<br><br><br>
 
-						<label for="message">C'est quoi votre message?</label><br>
-						<textarea name="message" id="corpsdumessage" placeholder="C'est ici qu'il faut écrire..." rows="5" cols="40" required></textarea>
-						<span id="corpsmessage"></span>
+							<label for="message">C'est quoi votre message?</label><br>
+							<textarea name="message" id="corpsdumessage" placeholder="C'est ici qu'il faut écrire..." rows="5" cols="40" required></textarea>
+							<span id="corpsmessage"></span>
 
-						<br>
-						<label for="checkbox">	Et le bonus : <br> quelles sont tes passions?</label><br>
-						<input type="checkbox" name="halloween" >
-						<label for="halloween">halloween</label><br>
-						<input type="checkbox" name="manger" >
-						<label for="manger">quand est-ce qu'on mange?</label><br>
-						<input type="checkbox" name="crochet">
-						<label for="crochet">le crochet. De serrure!</label> <br>
-						<br>
-						<input type="submit" value="c'est parti!" id="envoie">
-					</form><br>
+							<br>
+							<label for="checkbox">	Et le bonus : <br> quelles sont tes passions?</label><br>
+							<input type="checkbox" name="halloween" >
+							<label for="halloween">halloween</label><br>
+							<input type="checkbox" name="manger" >
+							<label for="manger">quand est-ce qu'on mange?</label><br>
+							<input type="checkbox" name="crochet">
+							<label for="crochet">le crochet. De serrure!</label> <br>
+							<br>
+							<input type="submit" value="c'est parti!" id="envoie">
+						</form><br>
+					</div>
 				</section>
 			</main>
 
@@ -141,7 +143,7 @@
 
 
 
-				} else { 
+					} else { 
 						alert("Les informations ont bien été prises en compte.");
 					}
 				}
