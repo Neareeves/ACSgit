@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Haleth son of Helm est un guerrier de la Terre du Milieu">
+	<meta name="author" content="Aletha">
+	<link rel="shortcut icon" type="image/jpg" href="images/gragonchino.jpg">
+	<link rel="stylesheet" type="text/css" href="templateavatar.css">
+	<title>Le site d'Aleth</title>
+	 
+	
+</head>
+<body>
+	<header>
+		<div class="tete">
+			<h1>Haleth, son of Helm</h1>
+			<nav class="menu">
+				<ul>
+					<li><a href="#portrait">Mon portrait</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+
+		<section id="histoire">
+			<article>
+				<div class="text">
+					<h3>Batailles et diplomatie <br>sur Middle Earth</h3>
+
+					<p class="flow">
+					« Fils de Hama », c’est le nom par lequel on me connait, bien que je sois le fils de Helm Mainmarteau. Mon père, grand roi du Rohan, est connu pour avoir construit un immense ouvrage défensif au bord d’une montagne, à qui il a d’ailleurs donné son nom. Ce <mark>« Gouffre de Helm »</mark>, comme on l’appelle, a été réputé pour être le fort le plus solide de la Terre du Milieu, pendant un certain temps. Jusqu’à ce qu’une armée d’Uruk-Hai parvienne, en quelques minutes à peine, à réduire en miettes la grosse muraille qu’une nuée de nains avait mis des années à édifier.</p>
+
+					<p class="flow">Tout ça, c’est sensé me préparer à prendre la relève sur le trône. Je l’ai pas encore dit, mais j’en ai pas trop envie. Mon rêve, c’est de devenir le plus grand chasseur de dragons de la Terre du Milieu. Et j’y suis presque ! Il ne me reste que deux tâches à accomplir avant d’y arriver : trouver une licorne qui vole. Parce que c’est le seul moyen pour s’approcher d’un dragon. Sans ça, c’est impossible.</p>
+
+					<p class="flow">Enfin, il reste une autre chose à accomplir pour arriver à mon but. Bah, c’est pas grand-chose, mais quand-même, ça compte un tout petit peu. Cette tâche, c’est trouver un dragon à tuer. Mine de rien, il n’y en a pas tant que ça, ni au Rohan, ni à Belfort où j’ai aussi cherché… Bon, je ne perds pas espoir, et puis comme ils n’existent pas, si j’en trouve un pour le tuer, je serai vraiment sûre d’être le plus grande chasseur de dragons du monde !
+					</p>
+				</div>
+			</article>
+		</section>
+		<section id="portrait">
+			<article>
+				<div class="flexportrait">
+					<h2>Mon portrait</h2>
+					<img src="images/Haleth2.jpg">
+				</div>	
+			</article>
+		</section>
+		<section id="contact">
+			<h4 class="formulairecontact">Si vous voulez me contacter, c'est part là!</h4>
+
+			<form name="formulairecontacte" method="post">
+				<table id="tablo" >
+					<tr>
+						<td>Entrez un nom</td>
+						<td ><input id="nom" type="text" name="nom" required></td>
+					</tr>						<tr>
+						<td>Un mail pour rester en contact?    </td>
+						<td><input id="email" type="email" name="email" required>	</td>
+					</tr>
+					<tr>
+						<td>C'est quand le solstice?</td>
+						<td><input type="date" name="solstice"></td>
+					</tr>
+					<tr>
+						<td>C'est quoi ton site?</td>
+						<td><input type="url" name="url" id="url" ></td>
+					</tr>
+					<tr>
+						<td>T'es une fille ou un garçon?</td>
+						<td><label for="fille">fille</label>
+							<input type="radio" name="genre" >
+							<label for="garcon">garçon</label>
+							<input type="radio" name="genre" ></td>
+					</tr>
+				</table>
+	<br>
+
+				<label for="message">C'est quoi votre message?</label><br>
+				<textarea name="message" id="corpsdumessage" placeholder="C'est ici qu'il faut écrire..." rows="5" cols="40" required></textarea>
+				<span id="corpsmessage"></span>
+
+				<br>
+				<label for="checkbox">	Et le bonus : <br> quelles sont tes passions?</label><br>
+				<input type="checkbox" name="halloween" >
+				<label for="halloween">halloween</label><br>
+				<input type="checkbox" name="manger" >
+				<label for="manger">quand est-ce qu'on mange?</label><br>
+				<input type="checkbox" name="crochet">
+				<label for="crochet">le crochet. De serrure!</label> <br>
+						<br>
+				<input type="submit" value="c'est parti!" id="envoie">
+			</form><br>
+				</section>
+			</main>
+
+			<script type="text/javascript">
+
+				var formValid = document.getElementById('envoie');
+				var corpsMessage = document.getElementById('corpsdumessage');
+				var manqueMess = document.getElementById('corpsmessage');
+				// var contenuNom = document.getElementById("nom");
+				// var contenuEmail = document.getElementById('email');
+
+				formValid.addEventListener('click', validation);
+				function validation(event){
+					if (corpsdumessage.validity.valueMissing) {
+						event.preventDefault();
+						manqueMess.textContent = 'Veuillez taper votre message avant de valider.';
+						manqueMess.style.color = 'red';
+						alert("Merci de remplir correctment les informations demandées");
+					} else { 
+						alert("Les informations ont bien été prises en compte.");
+					} 
+				}
+				// function check_empty() {
+				// 	if (document.getElementById('nom').value == "" || document.getElementById('email').value == "" || document.getElementById('corpsdumessage').value == "") {
+				// 		alert("Fill All Fields !");
+				// 	} else {
+				// 		document.getElementById('form').submit();
+				// 		alert("Form Submitted Successfully...");
+				// 	}
+				// }
+//Function To Display Popup
+// function div_show() {
+// 	document.getElementById('abc').style.display = "block";
+// }
+// //Function to Hide Popup
+// function div_hide(){
+// 	document.getElementById('abc').style.display = "none";
+// }
+				// formValid.addEventListener('click', validation);
+				// function validation(event){
+				// 	if (corpsdumessage.validity.valueMissing) {
+				// 		event.preventDefault();
+				// 		manqueNom.textContent = 'Veuillez taper votre message avant de valider.';
+				// 		manqueNom.style.color = 'red';
+				// 	}
+				// }
+
+ // var text = document.getElementById('pseudo');
+
+  
+
+ //    text.addEventListener('focus', function(e) {
+
+ //        e.target.value = "Vous avez le focus !";
+
+ //    });
+
+
+ //    text.addEventListener('blur', function(e) {
+
+ //        e.target.value = "Vous n'avez pas le focus !";
+
+ //    });
+	</script>
+		</body>
+		</html>
