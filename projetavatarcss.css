@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
 	font-family: EnchantedLand;
 	src: url('EnchantedLand.otf');
 	font-family: Augusta;
@@ -15,7 +15,7 @@ padding: 0;
  }
 body {
 	
-	background-image:url(images/Rohan.jpg);
+	background-image:url(images/rohan.jpg);
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -119,7 +119,7 @@ nav li:hover .sousmenu {
 
 
 */
-/*signification?*/
+
  /*class and id divers*/
 .portrait {
 	padding: 5px;
@@ -127,19 +127,19 @@ nav li:hover .sousmenu {
 	border-style: dotted;
 	border-color: #C1905B;
 	float: right;
-	width: 45%;
+	width: 44%;
 	
 }
 
-/*.portrait img {
+.portrait img {
 	width: 100%;
-	float: right;
-}*/
+	
+}
 /*pourquoi là 100% de la largeur c'est la moitié, et pour le texte, c'est otute la largeur?*/
 
 .text {
-	float:right;
-	width: 45%;
+	float:left;
+	width: 44%;
 	margin-right: 3vw;
 
 }
